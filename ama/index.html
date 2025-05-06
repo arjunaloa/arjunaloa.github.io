@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4737d6">
+    <link rel="stylesheet" href="style.css">
+    <title>Ask me</title>
+</head>
+<body>
+    <div class="page-send-message">
+        <div class="message-card">
+            <div class="message-card-header">
+                <img src="https://st.depositphotos.com/11953928/60630/v/1600/depositphotos_606307488-stock-illustration-anime-boy-avatar-stars-background.jpg" alt="Avatar Pengguna" class="avatar">
+                <div>
+                    <div id="username" style="font-style: italic;">@pororo</div>
+                    <div id="promt" style="font-size: 14px; font-weight: bold;">Kirimi aku pesan anonim dong</div>
+                </div>
+            </div>
+            <div class="message-box">
+                <textarea id="question" placeholder="Tulis pesan anda..." maxlength="500"></textarea>
+                <div class="dice" id="dice">🎲</div>
+            </div>
+        </div>
+        
+        <span style="margin-top: 20px; color: white; font-weight: bold;">🔐 Pesan dikirim secara anonim</span>
+        
+        <button class="btn" id="send">Kirim!</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

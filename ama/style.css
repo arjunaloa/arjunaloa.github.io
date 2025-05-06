@@ -139,14 +139,50 @@ body {
     to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-.start-page {
+
+body, html {
+    overflow: hidden; /* Mencegah scroll default pada body dan html */
+    margin: 0;
+    padding: 0; /* Pastikan tidak ada padding default */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Container juga harus 100vh */
+    transition: transform 0.5s ease-in-out;
+}
+
+.form-page {
     background: #03A9F4;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Setiap halaman juga 100vh */
     padding: 20px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 100vw;
 }
+
+#form-2 {
+    background: #3a3838;
+}
+
+.ama-logo {
+    margin-bottom: 20px;
+}
+
+
+.age-confirmation {
+    margin-top: 20px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+
+
+
 
 .ama-logo {
     margin-top: 200px;
@@ -170,5 +206,29 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: white;
     font-size: 12px;
+    text-align: center;
+}
+
+        #username {
+            color: white;
+            font-weight: bold;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: none; /* Menghilangkan border */
+            border-radius: 30px;
+            font-size: 16px;
+            width: 90vw;
+            height: auto;
+            background-color: rgba(255, 255, 255, 0.3);
+            outline: none; /* Menghilangkan outline saat fokus */
+        }
+
+.title-username {
+    margin-top: 20vh;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
     text-align: center;
 }

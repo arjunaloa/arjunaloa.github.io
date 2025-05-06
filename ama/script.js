@@ -1,3 +1,4 @@
+
 const user = {
     fist_name: "Mario",
     last_name: "Gomez",
@@ -7,6 +8,7 @@ const user = {
 }
 
 let startParam = "pororo";
+
 
 document.getElementById('send').addEventListener('click', async function() {
     let button = this;
@@ -21,3 +23,25 @@ document.getElementById('send').addEventListener('click', async function() {
     button.classList.remove('loading');
     document.getElementById('question').value = ''
 });
+
+
+function ubahRouteHash(fitur, state = null, title = '') {
+  const newHash = `#${fitur}`;
+  const newUrl = window.location.pathname + window.location.search + newHash;
+  window.history.pushState(state, title, newUrl); // Menggunakan pushState
+  console.log(`Berpindah ke: ${newUrl}`, state);
+}
+
+function showRegistrationForm() {
+    
+}
+
+const continueBtn = document.getElementById('continue');
+const formContainer = document.querySelector('.form-container');
+const form1 = document.getElementById('form-1');
+const form2 = document.getElementById('form-2');
+
+continueBtn.addEventListener('click', () => {
+    formContainer.style.transform = 'translateY(-100vh)';
+});
+
